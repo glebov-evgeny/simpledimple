@@ -1,0 +1,71 @@
+.intro{
+	background: url(../img/intro/bg.jpg) top left no-repeat, #a3aac7;
+	background-size: cover;
+	color: #000000;
+	padding: 15rem 0;
+	@media (min-width: 992px) {
+		padding: 20rem 0;
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 120%;
+		text-transform: uppercase;
+		margin-bottom: 6rem;
+		@media (min-width: 992px) {
+			font-size: 4.8rem;
+			margin-bottom: 8rem;
+		}
+		span{
+			color: #3E9CDC;
+		}
+	}
+	&__description{
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 120%;
+		@media (min-width: 992px) {
+			font-size: 2rem;
+		}
+	}
+	&__list{
+		margin-bottom: 6rem;
+		@media (min-width: 992px) {
+			margin-bottom: 6rem;
+		}
+		li{
+			position: relative;
+			font-weight: 400;
+			font-size: 1.8rem;
+			line-height: 120%;
+			padding-left: 1rem;
+			@media (min-width: 992px) {
+				font-size: 2rem;
+			}
+			&::before{
+				content: '';
+				width: .5rem;
+				height: .1rem;
+				background: #000000;
+				position: absolute;
+				left: 0;
+				top: 1rem;
+				@media (min-width: 992px) {
+					top: 1.25rem;
+				}
+			}
+		}
+	}
+	&__buttons{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	&__button{
+		max-width: 18rem;
+
+		&:first-child{
+			margin-right: 3rem;
+		}
+	}
+}

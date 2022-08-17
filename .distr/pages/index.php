@@ -1,10 +1,10 @@
 {% extends "default.php" %}
 
 {% block meta %}
-  <title><?= $title ?></title>
-  <meta property="og:title" content="<?= $title ?>">
-  <meta name="description" content="<?= $description ?>">
-  <meta property="og:description" content="<?= $description ?>">
+    <title>Тестовая страница</title>
+    <meta property="og:title" content="Тестовая страница">
+    <meta name="description" content="...">
+    <meta property="og:description" content="...">
 {% endblock %}
 
 {% block blocks %}

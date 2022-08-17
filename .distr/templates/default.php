@@ -1,29 +1,16 @@
-<?php
-$ROOT = $_SERVER['DOCUMENT_ROOT'] . '/';
-$BASE_HREF = '//' . $_SERVER['HTTP_HOST'] . (!empty($_SERVER['DOCUMENT_URI']) ? str_replace( substr(str_replace('index.php', '', $_SERVER['DOCUMENT_URI']), 1), '', $_SERVER['REQUEST_URI'] ) : '');
-$URL = '//' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$version = isset($_GET['version']) ? urldecode( strtolower($_GET['version']) ) : '';
-$partner = isset($_GET['partner']) ? urldecode( strtolower($_GET['partner']) ) : '';
-
-include_once $ROOT . 'version.php';
-
-?>
-
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="ru>">
 
 <head>
-    <base href="<?=$BASE_HREF?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     {% block meta %}
-    <title><?= $title ?></title>
-    <meta property="og:title" content="<?= $title ?>">
-    <meta name="description" content="<?= $description ?>">
-    <meta property="og:description" content="<?= $description ?>">
+    <title>Тестовая страница</title>
+    <meta property="og:title" content="Тестовая страница">
+    <meta name="description" content="...">
+    <meta property="og:description" content="...">
     {% endblock %}
-    <meta property="og:url" content="//<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
 
     {% block styles %}
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +22,7 @@ include_once $ROOT . 'version.php';
 
 
 
-<body class="<?= $version ? 'version-' . $version : '' ?>" id="body">
+<body id="body">
 
   <div class="wrapper">
     {% block blocks %}

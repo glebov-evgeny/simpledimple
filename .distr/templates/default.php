@@ -25,9 +25,6 @@ include_once $ROOT . 'version.php';
     {% endblock %}
     <meta property="og:url" content="//<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-
     {% block styles %}
     <link rel="stylesheet" href="css/style.css">
     {% endblock %}
@@ -43,18 +40,11 @@ include_once $ROOT . 'version.php';
   <div class="wrapper">
     {% block blocks %}
     {% endblock %}
-
-    <section class="popups" hidden>
-        {% block popups %}
-        {% endblock %}
-    </section>
-
-  </div><!-- wrapper -->
+  </div>
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
 
   {% block js %}
   {% endblock %}

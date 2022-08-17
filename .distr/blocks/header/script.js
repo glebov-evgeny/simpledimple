@@ -1,6 +1,5 @@
 $(function () {
 	initMenu();
-	initScroll();
 	initHeaderScroll();
 	initActiveLink();
   
@@ -25,6 +24,7 @@ $(function () {
 				$(this).toggleClass('active');
 			}
 		);
+
 	  $('.header__nav-link, .header__nav-link-btn, .header__nav-close').on('click', function () {
 			$('.ham, .header__nav, .header__menu').removeClass('active');
 	  });
@@ -38,20 +38,6 @@ $(function () {
 			}
 			e.target.classList.add('is-active');
 		}
-	}
-
-	function initScroll() {
-	  if (!$('.scroll').length) return;
-  
-	  $(document).on('click scroll.init', '.scroll', function (event) {
-		event.preventDefault();
-		$.fancybox.close();
-  
-		var
-		  hrefId = $(this).attr('href') || $(this).data('href'),
-		  posTop = $(hrefId).offset().top;
-		$('html, body').animate({ scrollTop: posTop - 95 }, 1500);
-	  });
 	}
   
 });

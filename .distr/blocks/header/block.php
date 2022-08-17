@@ -8,10 +8,10 @@
         </div>
 
         <nav class="header__nav">
-            <a href="#footer" class="header__nav-link is-active scroll" target="_blank">Бизнес</a>
-            <a href="#footer" class="header__nav-link scroll" target="_blank">О нас</a>
-            <a href=#footer" class="header__nav-link scroll" target="_blank">Цены</a>
-            <a href=#footer" class="header__nav-link scroll" target="_blank">Оформить заказ</a>
+            <a href="#" class="header__nav-link is-active" target="_blank">Бизнес</a>
+            <a href="#" class="header__nav-link" target="_blank">О нас</a>
+            <a href=#" class="header__nav-link" target="_blank">Цены</a>
+            <a href=#" class="header__nav-link" target="_blank">Оформить заказ</a>
         </nav>
 
         <div class="header__menu">

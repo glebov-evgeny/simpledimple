@@ -366,6 +366,20 @@ select {
   }
 }
 
+.title{
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  span{
+    color: #3E9CDC;
+  }
+  @media (min-width: 992px) {
+    font-size: 3.6rem;
+  }
+}
 .notlink{
   user-select: none;
   pointer-events: none;

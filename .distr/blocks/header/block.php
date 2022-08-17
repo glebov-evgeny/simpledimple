@@ -9,7 +9,7 @@
 
         <nav class="header__nav">
             <a href="#footer" class="header__nav-link is-active scroll" target="_blank">Бизнес</a>
-            <a href="footer" class="header__nav-link scroll" target="_blank">О нас</a>
+            <a href="#footer" class="header__nav-link scroll" target="_blank">О нас</a>
             <a href=#footer" class="header__nav-link scroll" target="_blank">Цены</a>
             <a href=#footer" class="header__nav-link scroll" target="_blank">Оформить заказ</a>
         </nav>

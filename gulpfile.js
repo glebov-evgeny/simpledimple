@@ -25,7 +25,7 @@ var CONFIG = {
 	blocks: '.distr/blocks', /* Блоки сайта в дистрибутиве */
 	proxyPortPhp: 8001, /* Прокси-порт для PHP-сервера */
 	proxyPortBs: 8910, /* Прокси-порт для browserSync */
-	useAutoprefixer: true, /* Autoprefixer по умолчанию выключен */
+	useAutoprefixer: true, /* Autoprefixer по умолчанию влючен */
 	reload: true, /* Перезагрузка браузера по умолчанию влючена */
 	phpPath: '' /* Путь к локально установленному PHP (для сборки под Windows), задавать только в gulpconfig.json */
 };

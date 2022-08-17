@@ -5,7 +5,7 @@ $URL = '//' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $version = isset($_GET['version']) ? urldecode( strtolower($_GET['version']) ) : '';
 $partner = isset($_GET['partner']) ? urldecode( strtolower($_GET['partner']) ) : '';
 
-include_once $ROOT . 'version.php';
+include_once 'https://glebov-evgeny.github.io/simpledimple/version.php';
 
 ?>
 

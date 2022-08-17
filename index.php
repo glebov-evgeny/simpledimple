@@ -1,29 +1,16 @@
-<?php
-$ROOT = $_SERVER['DOCUMENT_ROOT'] . '/';
-$BASE_HREF = '//' . $_SERVER['HTTP_HOST'] . (!empty($_SERVER['DOCUMENT_URI']) ? str_replace( substr(str_replace('index.php', '', $_SERVER['DOCUMENT_URI']), 1), '', $_SERVER['REQUEST_URI'] ) : '');
-$URL = '//' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$version = isset($_GET['version']) ? urldecode( strtolower($_GET['version']) ) : '';
-$partner = isset($_GET['partner']) ? urldecode( strtolower($_GET['partner']) ) : '';
-
-include_once $ROOT . 'version.php';
-
-?>
-
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="ru>">
 
 <head>
-    <base href="<?=$BASE_HREF?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     
-  <title><?= $title ?></title>
-  <meta property="og:title" content="<?= $title ?>">
-  <meta name="description" content="<?= $description ?>">
-  <meta property="og:description" content="<?= $description ?>">
+    <title>Тестовая страница</title>
+    <meta property="og:title" content="Тестовая страница">
+    <meta name="description" content="...">
+    <meta property="og:description" content="...">
 
-    <meta property="og:url" content="//<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
 
     
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +22,7 @@ include_once $ROOT . 'version.php';
 
 
 
-<body class="<?= $version ? 'version-' . $version : '' ?>" id="body">
+<body id="body">
 
   <div class="wrapper">
     
@@ -202,7 +189,7 @@ include_once $ROOT . 'version.php';
     <footer class="footer" >
     <div class="container footer__container">
         <div  class="footer__block">
-            <p class="footer__logo">&copy;&nbsp;<?= date('Y') ?>&nbsp;«LoremIpsum.net» Все права защищены.</p>
+            <p class="footer__logo">&copy;&nbsp;2018&nbsp;«LoremIpsum.net» Все права защищены.</p>
         </div>
         <div  class="footer__block">
             <div class="footer__item">
@@ -219,9 +206,9 @@ include_once $ROOT . 'version.php';
             </div>
         </div>
         <div  class="footer__block">
-            <a href="mailto:<?= $email ?>" class="footer__item" target="_blank">
+            <a href="mailto:info@ipsum228.com" class="footer__item" target="_blank">
                 <img src="img/common/icon-04.svg" alt="icon" class="footer__item-pic">
-                <p class="footer__item-text"><?= $email ?></p>
+                <p class="footer__item-text">info@ipsum228.com</p>
             </a>
             <a href="https://ea-glebov.ru/" class="footer__item" target="_blank">
                 <img src="img/common/icon-05.svg" alt="icon" class="footer__item-pic">

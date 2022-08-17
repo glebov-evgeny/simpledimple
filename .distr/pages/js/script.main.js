@@ -1,5 +1,5 @@
 //=require header/script.js
-//=require faq/script.js
+//=require about/script.js
 //=require footer/script.js
 
 

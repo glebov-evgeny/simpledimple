@@ -10,8 +10,11 @@
 {% block blocks %}
     {% include 'header/block.php' %}
     {% include 'intro/block.php' %}
+    <div class="about__wrapper">
+        {% include 'about/block.php' %}
+    </div>
     {% include 'footer/block.php' %}    
-    <a href="#popup-reg" class="footer__btn" data-fancybox><?=$btn?></a>
+<!--    <a href="#popup-reg" class="footer__btn" data-fancybox>--><?//=$btn?><!--</a>-->
 {% endblock %}
 
 {% block popups %}

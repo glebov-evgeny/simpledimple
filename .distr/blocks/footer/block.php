@@ -1,24 +1,31 @@
-<footer class="footer {{class}}" id="footer">
-    <div class="container footer__flex">
-        <div  class="footer__content">
-            <div class="footer__logos">
-                <a href="<?=$BASE_HREF?>" class="footer__logo">
-                    <img src="img/header/logo.svg" alt="logo-01" class="footer__logo-pic">
-                </a>
-            </div>
-            <nav class="footer__nav">
-                {% if IS_MAIN == false %} 
-                    <a href="<?=$BASE_HREF?>#why" class="footer__nav-link" target="_blank">Why Python</a>
-                    <a href="<?=$BASE_HREF?>#about" class="footer__nav-link" target="_blank">About the Course</a>
-                    <a href="<?=$BASE_HREF?>#course" class="footer__nav-link" target="_blank">Training Process</a>
-                {% else %}
-                    <a href="#why" class="footer__nav-link scroll">Why Python</a>
-                    <a href="#about" class="footer__nav-link scroll">About the Course</a>
-                    <a href="#course" class="footer__nav-link scroll">Training Process</a>
-                {% endif %}
-            </nav>
+<footer class="footer" >
+    <div class="container footer__container">
+        <div  class="footer__block">
+            <p class="footer__logo">&copy;&nbsp;<?= date('Y') ?>&nbsp;«LoremIpsum.net» Все права защищены.</p>
         </div>
-        <p class="footer__link">&copy;&nbsp;<?= date('Y') ?>&nbsp;Synergy. All rights reserved.</p>
-        <a href="#privacy" class="fancybox footer__link">Privacy Policy</a>
+        <div  class="footer__block">
+            <div class="footer__item">
+                <img src="img/common/icon-01.svg" alt="icon" class="footer__item-pic">
+                <p class="footer__item-text _clear">Qiwi wallet</p>
+            </div>
+            <div class="footer__item">
+                <img src="img/common/icon-02.svg" alt="icon" class="footer__item-pic">
+                <p class="footer__item-text _clear">Yandex Money</p>
+            </div>
+            <div class="footer__item">
+                <img src="img/common/icon-03.svg" alt="icon" class="footer__item-pic">
+                <p class="footer__item-text _clear">Web Money</p>
+            </div>
+        </div>
+        <div  class="footer__block">
+            <a href="mailto:<?= $email ?>" class="footer__item" target="_blank">
+                <img src="img/common/icon-04.svg" alt="icon" class="footer__item-pic">
+                <p class="footer__item-text"><?= $email ?></p>
+            </a>
+            <a href="https://ea-glebov.ru/" class="footer__item" target="_blank">
+                <img src="img/common/icon-05.svg" alt="icon" class="footer__item-pic">
+                <p class="footer__item-text">Мы вконтакте</p>
+            </a>
+        </div>
     </div>
 </footer>

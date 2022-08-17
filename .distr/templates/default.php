@@ -40,8 +40,6 @@ include_once $ROOT . 'version.php';
 
 <body class="<?= $version ? 'version-' . $version : '' ?>" id="body">
 
-  {% import 'form/macro.php' as form %}
-
   <div class="wrapper">
     {% block blocks %}
     {% endblock %}

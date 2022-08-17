@@ -10,6 +10,8 @@ $format = '';
 $phone = '';
 $phone_link = '';
 
+$email = 'info@ipsum228.com';
+
 $lang = 'ru';
 
 switch ($version) {

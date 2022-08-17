@@ -1,8 +1,5 @@
 //=require header/script.js
 //=require about/script.js
-//=require footer/script.js
-
-
 
 $(function () {
  

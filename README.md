@@ -1,4 +1,4 @@
-https://github.com/glebov-evgeny/simpledimple/
+https://glebov-evgeny.github.io/simpledimple/
 
 Локальная сборка:
 1) npm i

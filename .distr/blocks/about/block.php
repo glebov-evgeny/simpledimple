@@ -63,7 +63,7 @@
             </div>
         </div>
 
-            <form class="about__form">
+            <form class="about__form" id="aboutForm">
                 <div class="about__form-item f_01">
                     <label class="about__form-input about__form-input-select">
                         <span class="about__form-input-select-text">Выберите тип системы</span>

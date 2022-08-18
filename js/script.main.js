@@ -1,5 +1,6 @@
 $(function () {
 	initMenu();
+	initScroll();
 	initHeaderScroll();
 	initActiveLink();
   
@@ -28,6 +29,22 @@ $(function () {
 	  $('.header__nav-link, .header__nav-link-btn, .header__nav-close').on('click', function () {
 			$('.ham, .header__nav, .header__menu').removeClass('active');
 	  });
+	}
+
+	function initScroll() {
+		if (!$('.scroll').length) return;
+
+		$(document).on('click scroll.init', '.scroll', function (event) {
+			event.preventDefault();
+
+			let
+				hrefId = $(this).attr('href') || $(this).data('href'),
+				posTop = $(hrefId).offset().top,
+				header = document.querySelector('.header'),
+			headerHeight = header.clientHeight;
+
+			$('html, body').animate({ scrollTop: posTop - headerHeight }, 1500);
+		});
 	}
 
 	function initActiveLink(){

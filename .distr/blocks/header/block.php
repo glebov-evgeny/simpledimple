@@ -2,7 +2,7 @@
     <div class="container header__container">
 
         <div class="header__logos">
-            <a href="<?=$BASE_HREF?>" target="_blank" class="header__logo">
+            <a href="#" target="_blank" class="header__logo">
                 <img src="img/header/logo.svg" alt="logo" class="header__logo-pic">
             </a>
         </div>

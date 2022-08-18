@@ -14,10 +14,6 @@
     {% include 'footer/block.php' %}
 {% endblock %}
 
-{% block popups %}
-    {% include 'popups/block.php' %}
-{% endblock %}
-
 {% block js %}
     <script src="js/script.main.js"></script>
 {% endblock %}
